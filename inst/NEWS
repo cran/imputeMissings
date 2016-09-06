@@ -1,6 +1,9 @@
 Change log:
 
-Version 0.0.1, Sep 30, 2015
-----------------------------
+*Version 0.0.3, Sep 5, 2016:
+-updated examples
+-added flag parameter to impute()
+-fixed an issue when new the new data has new categories in factors
 
-Submitted package to CRAN with two functions: compute and impute
+*Version 0.0.1, Sep 30, 2015:
+-Submitted package to CRAN with two functions: compute and impute
