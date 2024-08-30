@@ -60,7 +60,7 @@ impute <- function(data,  object=NULL, method="median/mode", flag=FALSE){
       colnames(dums) <- paste0(colnames(dums),"_flag")
   }
 
-  if (!class(object[[1]][[1]])=="randomForest"){
+  if (!"randomForest" %in% class(object[[1]][[1]])){
   data <- data.frame(sapply(1:ncol(data), function(i) {
         fact <- is.factor(data[,i])
         if (fact) data[,i] <- as.character(data[,i])
